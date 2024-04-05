@@ -17,7 +17,7 @@ class CategoryPage extends ConsumerWidget {
         title: const Text('Category Products'),
       ),
       body: categories.when(
-        data: (data) {
+        data: (data) {          
           return ListView.builder(
             itemCount: data.length,
             itemBuilder: (context, index) {
